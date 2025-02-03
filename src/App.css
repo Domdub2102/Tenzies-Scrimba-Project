@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+}
+
+div#root {
+  height: 100%
+}
+
+.main {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice_container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.die {
+  aspect-ratio: 1/1;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+}
+
+.roll_button {
+  width: auto;
+  white-space: nowrap;
+  height: 70px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+  cursor: pointer;
+  color: white;
+  background-color: #5035FF;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  padding: 0 50px;
+}
